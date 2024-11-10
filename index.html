@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <title> Bellbox.id - Catering </title>
+    <title>Bellbox.id - Catering</title>
 
     <link href="//fonts.googleapis.com/css?family=Mukta:300,400,500" rel="stylesheet">
     <link rel="shortcut icon" href="assets/images/favicon1.jpeg" type="">
@@ -135,21 +135,21 @@
   
             <div class="fea-gd-vv text-center row">
                 <div class="float-top col-lg-4 col-md-6">
-                    <a href="#url"><img src="assets/images/h1.jpeg" class="img-responsive" alt=""></a>
+                    <a href="#url"><img src="" class="img-responsive" alt=""></a>
                     <div class="float-lt feature-gd">
-                        <h3><a href="#url">Sedang sibuk dan butuh makan praktis, lezat, dan bergizi setiap hari?</a> </h3>
+                        <h3><a href="#url">- Sedang sibuk dan butuh makan praktis, lezat, dan bergizi setiap hari?</a> </h3>
                     </div>
                 </div>
                 <div class="float-top col-lg-4 col-md-6 mt-md-0 mt-5">
-                    <a href="#url"><img src="assets/images/h2.jpeg" class="img-responsive" alt=""></a>
+                    <a href="#url"><img src="" class="img-responsive" alt=""></a>
                     <div class="float-lt feature-gd">
-                        <h3><a href="#url">Sering Sakit magh karena telat makan ?</a> </h3>
+                        <h3><a href="#url">- Sering Sakit magh karena telat makan ?</a> </h3>
                     </div>
                 </div>
                 <div class="float-top col-lg-4 col-md-6 mt-lg-0 mt-5">
-                    <a href="#url"><img src="assets/images/h3.jpg" class="img-responsive" alt=""></a>
+                    <a href="#url"><img src="" class="img-responsive" alt=""></a>
                     <div class="float-lt feature-gd">
-                        <h3><a href="#url">Mau Pesan Makan di Ojek Online Tapi Ongkir nya bikin kantong jebol ?</a> </h3>
+                        <h3><a href="#url">- Mau Pesan Makan di Ojek Online Tapi Ongkir nya bikin kantong jebol ?</a> </h3>
                     </div>
                 </div>
                 <div class="container py-md-4 py-2">
@@ -213,117 +213,177 @@
                 <h6 class="title-small">Masih Ragu ? </h6>
                 <h3 class="title-big mb-md-5 mb-4">Ini Kata mereka tentang Catering Harian BellBox</h3 >
             </div>
-            <!-- /grids -->
-            <div class="testimonial-row">
-                <div id="owl-demo1" class="owl-testimonial owl-carousel owl-theme">
-                    <div class="item">
-                        <div class="testimonial-content">
-                            <div class="testimonial">
-                                <div class="test-img">
-                                    <img src="assets/images/team1.jpg" class="img-fluid"
-                                        alt="client-img">
-                                </div>
-                                <div class="testi-des">
-                                    <div class="peopl align-self">
-                                        <h3>Dennis wilson</h3>
-                                    </div>
-                                </div>
-                                <blockquote>
-                                    <q>Lorem ipsum dolor sit amet int consectetur adipisicing elit. Velita beatae
-                                        laudantium Quas minima sunt natus tempore, maiores aliquid modi felis vitae
-                                        facere aperiam sequi optio lacinia id ipsum non velit, culpa.
-                                        voluptate rem ullam dolore nisi est quasi, doloribus tempora.</q>
-                                </blockquote>
-                                <ul class="social-media-test m-0 mt-4 p-0">
-                                    <li><a href="#facebook" class="facebook"><span class="fa fa-facebook"></span></a></li>
-                                    <li><a href="#twitter" class="twitter"><span class="fa fa-twitter"></span></a></li>
-                                    <li><a href="#instagram" class="instagram"><span class="fa fa-instagram"></span></a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
+
+
+
+            <head>
+              <meta charset="UTF-8">
+              <meta name="viewport" content="width=device-width, initial-scale=1.0">
+              <title>WhatsApp Testimoni Slider (3 Gambar per Slide)</title>
+              <style>
+                  /* Style untuk kontainer slider */
+                  .slider-container {
+                      position: relative;
+                      max-width: 1000px;
+                      margin: auto;
+                      overflow: hidden;
+                      border-radius: 10px;
+                      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+                  }
+          
+                  /* Style untuk wrapper slide */
+                  .slide-wrapper {
+                      display: flex;
+                      transition: transform 0.5s ease;
+                  }
+          
+                  /* Style untuk tiap slide */
+                  .slide {
+                      min-width: 100%;
+                      display: flex;
+                      justify-content: space-around;
+                  }
+          
+                  /* Style untuk gambar screenshot WhatsApp */
+                  .slide img {
+                      width: 30%;
+                      border-radius: 10px;
+                      object-fit: cover;
+                      margin: 0 5px;
+                  }
+          
+                  /* Tombol navigasi */
+                  .prev, .next {
+                      cursor: pointer;
+                      position: absolute;
+                      top: 50%;
+                      padding: 15px;
+                      color: white;
+                      font-weight: bold;
+                      font-size: 20px;
+                      background-color: #25d366;
+                      border-radius: 50%;
+                      transform: translateY(-50%);
+                      user-select: none;
+                  }
+          
+                  .prev {
+                      left: 10px;
+                  }
+          
+                  .next {
+                      right: 10px;
+                  }
+          
+                  /* Indikator dot */
+                  .dots {
+                      text-align: center;
+                      padding: 15px 0;
+                  }
+          
+                  .dot {
+                      cursor: pointer;
+                      height: 15px;
+                      width: 15px;
+                      margin: 0 5px;
+                      background-color: #bbb;
+                      border-radius: 50%;
+                      display: inline-block;
+                      transition: background-color 0.3s;
+                  }
+          
+                  .active, .dot:hover {
+                      background-color: #25d366;
+                  }
+              </style>
+          </head>
+          <body>
+          
+              <div class="slider-container">
+                  <div class="slide-wrapper">
+                      <!-- Slide 1 -->
+                      <div class="slide">
+                          <img src="assets/images/testi.jpg" alt="Testimoni 1">
+                          <img src="assets/images/testi1.jpg" alt="Testimoni 2">
+                          <img src="assets/images/testi2.jpg" alt="Testimoni 3">
+                      </div>
+          
+                      <!-- Slide 2 -->
+                      <div class="slide">
+                        <img src="assets/images/testi3.jpg" alt="Testimoni 1">
+                        <img src="assets/images/testi4.jpg" alt="Testimoni 2">
+                        <img src="assets/images/testi5.jpg" alt="Testimoni 3">
                     </div>
-                    <div class="item">
-                        <div class="testimonial-content">
-                            <div class="testimonial">
-                                <div class="test-img"><img src="assets/images/team2.jpg" class="img-fluid"
-                                        alt="client-img">
-                                </div>
-                                <div class="testi-des">
-                                    <div class="peopl align-self">
-                                        <h3>Tommy sakura</h3>
-                                    </div>
-                                </div>
-                                <blockquote>
-                                    <q>Lorem ipsum dolor sit amet int consectetur adipisicing elit. Velita beatae
-                                        laudantium Quas minima sunt natus tempore, maiores aliquid modi felis vitae
-                                        facere aperiam sequi optio lacinia id ipsum non velit, culpa.
-                                        voluptate rem ullam dolore nisi est quasi, doloribus tempora.</q>
-                                </blockquote>
-                                <ul class="social-media-test m-0 mt-4 p-0">
-                                    <li><a href="#facebook" class="facebook"><span class="fa fa-facebook"></span></a></li>
-                                    <li><a href="#twitter" class="twitter"><span class="fa fa-twitter"></span></a></li>
-                                    <li><a href="#instagram" class="instagram"><span class="fa fa-instagram"></span></a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
+          
+                      <!-- Slide 3 -->
+                      <div class="slide">
+                        <img src="assets/images/testi6.jpg" alt="Testimoni 1">
+                        <img src="assets/images/testi.jpg" alt="Testimoni 2">
+                        <img src="assets/images/testi3.jpg" alt="Testimoni 3">
                     </div>
-                    <div class="item">
-                        <div class="testimonial-content">
-                            <div class="testimonial">
-                                <div class="test-img"><img src="assets/images/team3.jpg" class="img-fluid"
-                                        alt="client-img">
-                                </div>
-                                <div class="testi-des">
-                                    <div class="peopl align-self">
-                                        <h3>Roy Linderson</h3>
-                                    </div>
-                                </div>
-                                <blockquote>
-                                    <q>Lorem ipsum dolor sit amet int consectetur adipisicing elit. Velita beatae
-                                        laudantium Quas minima sunt natus tempore, maiores aliquid modi felis vitae
-                                        facere aperiam sequi optio lacinia id ipsum non velit, culpa.
-                                        voluptate rem ullam dolore nisi est quasi, doloribus tempora.</q>
-                                </blockquote>
-                                <ul class="social-media-test m-0 mt-4 p-0">
-                                    <li><a href="#facebook" class="facebook"><span class="fa fa-facebook"></span></a></li>
-                                    <li><a href="#twitter" class="twitter"><span class="fa fa-twitter"></span></a></li>
-                                    <li><a href="#instagram" class="instagram"><span class="fa fa-instagram"></span></a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="testimonial-content">
-                            <div class="testimonial">
-                                <div class="test-img"><img src="assets/images/team4.jpg" class="img-fluid"
-                                        alt="client-img">
-                                </div>
-                                <div class="testi-des">
-                                    <div class="peopl align-self">
-                                        <h3>Mike Thyson</h3>
-                                    </div>
-                                </div>
-                                <blockquote>
-                                    <q>Lorem ipsum dolor sit amet int consectetur adipisicing elit. Velita beatae
-                                        laudantium Quas minima sunt natus tempore, maiores aliquid modi felis vitae
-                                        facere aperiam sequi optio lacinia id ipsum non velit, culpa.
-                                        voluptate rem ullam dolore nisi est quasi, doloribus tempora.</q>
-                                </blockquote>
-                                <ul class="social-media-test m-0 mt-4 p-0">
-                                    <li><a href="#facebook" class="facebook"><span class="fa fa-facebook"></span></a></li>
-                                    <li><a href="#twitter" class="twitter"><span class="fa fa-twitter"></span></a></li>
-                                    <li><a href="#instagram" class="instagram"><span class="fa fa-instagram"></span></a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+                  </div>
+          
+                  <!-- Tombol navigasi -->
+                  <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+                  <a class="next" onclick="changeSlide(1)">&#10095;</a>
+              </div>
+          
+              <!-- Indikator dot -->
+              <div class="dots">
+                  <span class="dot" onclick="currentSlide(1)"></span>
+                  <span class="dot" onclick="currentSlide(2)"></span>
+                  <span class="dot" onclick="currentSlide(3)"></span>
+              </div>
+          
+              <script>
+                  let currentIndex = 0;
+          
+                  // Fungsi untuk mengubah slide
+                  function changeSlide(n) {
+                      showSlide(currentIndex += n);
+                  }
+          
+                  // Fungsi untuk menampilkan slide tertentu
+                  function currentSlide(n) {
+                      showSlide(currentIndex = n - 1);
+                  }
+          
+                  // Fungsi utama untuk menampilkan slide
+                  function showSlide(index) {
+                      let slides = document.getElementsByClassName("slide");
+                      let dots = document.getElementsByClassName("dot");
+          
+                      // Jika indeks melampaui jumlah slide, kembali ke awal
+                      if (index >= slides.length) {
+                          currentIndex = 0;
+                      }
+                      // Jika indeks kurang dari nol, kembali ke slide terakhir
+                      if (index < 0) {
+                          currentIndex = slides.length - 1;
+                      }
+          
+                      // Pindahkan slide-wrapper berdasarkan indeks slide saat ini
+                      let slideWrapper = document.querySelector('.slide-wrapper');
+                      slideWrapper.style.transform = `translateX(-${currentIndex * 100}%)`;
+          
+                      // Ubah status dot yang aktif
+                      for (let i = 0; i < dots.length; i++) {
+                          dots[i].className = dots[i].className.replace(" active", "");
+                      }
+                      dots[currentIndex].className += " active";
+                  }
+          
+                  // Slider otomatis setiap 5 detik
+                  setInterval(function() {
+                      changeSlide(1);
+                  }, 5000); // Ganti slide setiap 5 detik
+              </script>
+          
+          </body>
+            
+
+
+
         <!-- /grids -->
     </div>
     <!-- //grids -->
@@ -356,27 +416,7 @@
                                     </div>
                                     <div class="blog-bottom-info">
     
-                                        <button onclick="sendWhatsAppMessages()" class="btn btn-primary btn-style1">Order Disini</button>
-                                        <script>
-                                            function sendWhatsAppMessages() {
-                                                var formData = JSON.parse(localStorage.getItem("formData"));
-                                    
-                                                var phoneNumber1 = "6289514206590"; // Replace with your WhatsApp number 1
-                                                var phoneNumber2 = "6289514206590"; // Replace with your WhatsApp number 2
-                                    
-                                                var randomNumber = Math.random(); // Generate a random number between 0 and 1
-                                    
-                                                var whatsappURL;
-                                    
-                                                if (randomNumber < 0.5) {
-                                                    whatsappURL = "https://api.whatsapp.com/send?phone=" + phoneNumber1 + "&text=" + encodeURIComponent("Halo BellbBox!" + "\nSaya Mau Order Nasi Boxnya Dong : " + "\n" + "\nNama Customer : _*Isi Nama Kamu*_ " + "\n" + "\nNama Menu : _*Isi Pesanan Kamu*_ " + "\n" + "\nJumlah Pesanan : " + "\n" + "\nAlamat : " + "\n" + "\nTerima Kasih!!");
-                                        } else {
-                                          whatsappURL = "https://api.whatsapp.com/send?phone=" + phoneNumber1 + "&text=" + encodeURIComponent("Halo BellbBox!" + "\nSaya Mau Order Nasi Boxnya Dong : " + "\n" + "\nNama Customer : _*Isi Nama Kamu*_ " + "\n" + "\nNama Menu : _*Isi Pesanan Kamu*_ " + "\n" + "\nJumlah Pesanan : " + "\n" + "\nAlamat : " + "\n" + "\nTerima Kasih");
-                                                }
-                                    
-                                                window.open(whatsappURL, "_blank");
-                                            }
-                                        </script>
+
                                         <div class="course-meta">
                                         </div>
                                     </div>
@@ -402,28 +442,7 @@
                                         <span class="meta-value"> Nasi, lauk utama, sayur, Lauk pendamping dan buah segar. </span>
                                     </div>
                                     <div class="blog-bottom-info">
-                
-                                        <button onclick="sendWhatsAppMessages()" class="btn btn-primary btn-style1">Order Disini</button>
-                                        <script>
-                                            function sendWhatsAppMessages() {
-                                                var formData = JSON.parse(localStorage.getItem("formData"));
-                                    
-                                                var phoneNumber1 = "6289514206590"; // Replace with your WhatsApp number 1
-                                                var phoneNumber2 = "6289514206590"; // Replace with your WhatsApp number 2
-                                    
-                                                var randomNumber = Math.random(); // Generate a random number between 0 and 1
-                                    
-                                                var whatsappURL;
-                                    
-                                                if (randomNumber < 0.5) {
-                                                    whatsappURL = "https://api.whatsapp.com/send?phone=" + phoneNumber1 + "&text=" + encodeURIComponent("Halo BellbBox!" + "\nSaya Mau Order Nasi Boxnya Dong : " + "\n" + "\nNama Customer : _*Isi Nama Kamu*_ " + "\n" + "\nNama Menu : _*Isi Pesanan Kamu*_ " + "\n" + "\nJumlah Pesanan : " + "\n" + "\nAlamat : " + "\n" + "\nTerima Kasih!!");
-                                        } else {
-                                          whatsappURL = "https://api.whatsapp.com/send?phone=" + phoneNumber1 + "&text=" + encodeURIComponent("Halo BellbBox!" + "\nSaya Mau Order Nasi Boxnya Dong : " + "\n" + "\nNama Customer : _*Isi Nama Kamu*_ " + "\n" + "\nNama Menu : _*Isi Pesanan Kamu*_ " + "\n" + "\nJumlah Pesanan : " + "\n" + "\nAlamat : " + "\n" + "\nTerima Kasih");
-                                                }
-                                    
-                                                window.open(whatsappURL, "_blank");
-                                            }
-                                        </script>
+              
                                         <div class="course-meta">
                                         </div>
                                     </div>
@@ -436,36 +455,72 @@
                     Promo Spesial untuk Pelanggan Baru!
                     <a href=""> FREE 1 PORSI UNTUK SEMUA PAKET LANGGANAN <span class="pl-2 fa fa-long-arrow-down"></span><span class="pl-2 fa fa-long-arrow-down"></span><span class="pl-2 fa fa-long-arrow-down"></span></a>
                 </h3>
-                <div class="container">
-                    <div class="heading align-self text-center">
-                <button onclick="sendWhatsAppMessages()" class="btn btn-style btn-primary mt-lg-5 mt-4">WhatsApp</button>
-                      <script>
-                          function sendWhatsAppMessages() {
-                              var formData = JSON.parse(localStorage.getItem("formData"));
-                  
-                              var phoneNumber1 = "6289514206590"; // Replace with your WhatsApp number 1
-                              var phoneNumber2 = "6289514206590"; // Replace with your WhatsApp number 2
-                  
-                              var randomNumber = Math.random(); // Generate a random number between 0 and 1
-                  
-                              var whatsappURL;
-                  
-                              if (randomNumber < 0.5) {
-                                  whatsappURL = "https://api.whatsapp.com/send?phone=" + phoneNumber1 + "&text=" + encodeURIComponent("Halo BellbBox!" + "\nSaya Mau Order Nasi Boxnya Dong : " + "\n" + "\nNama Customer : _*Isi Nama Kamu*_ " + "\n" + "\nNama Menu : _*Isi Pesanan Kamu*_ " + "\n" + "\nJumlah Pesanan : " + "\n" + "\nAlamat : " + "\n" + "\nTerima Kasih!!");
-                      } else {
-                        whatsappURL = "https://api.whatsapp.com/send?phone=" + phoneNumber1 + "&text=" + encodeURIComponent("Halo BellbBox!" + "\nSaya Mau Order Nasi Boxnya Dong : " + "\n" + "\nNama Customer : _*Isi Nama Kamu*_ " + "\n" + "\nNama Menu : _*Isi Pesanan Kamu*_ " + "\n" + "\nJumlah Pesanan : " + "\n" + "\nAlamat : " + "\n" + "\nTerima Kasih");
-                              }
-                  
-                              window.open(whatsappURL, "_blank");
-                          }
-                      </script>
 
-            </div>
-        </div>
             </div>
         </div>
     </div>
 </section>
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Style untuk tombol WhatsApp melayang */
+        .whatsapp-float {
+            position: fixed;
+            width: 60px;
+            height: 110px;
+            left: 46%; /* Menempatkan di tengah secara horizontal */
+            bottom: 50px; /* Jarak dari tepi bawah */
+            transform: translateX(-50%); /* Menyelaraskan tepat di tengah */
+            color: #fff;
+            border-radius: 50%;
+            text-align: center;
+            font-size: 60px;
+            z-index: 1000;
+        }
+        .whatsapp-float a {
+            color: white;
+            display: block;
+            width: 100%;
+            height: 100%;
+            line-height: 60px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Tombol WhatsApp melayang di tengah bawah -->
+
+    <div class="whatsapp-float">
+      <div class="heading align-self text-center">
+  <button onclick="sendWhatsAppMessages()" class="btn btn-style btn-primary mt-lg-17 mt-15">Order Sekarang</button>
+        <script>
+            function sendWhatsAppMessages() {
+                var formData = JSON.parse(localStorage.getItem("formData"));
+    
+                var phoneNumber1 = "6289514206590"; // Replace with your WhatsApp number 1
+                var phoneNumber2 = "6289514206590"; // Replace with your WhatsApp number 2
+    
+                var randomNumber = Math.random(); // Generate a random number between 0 and 1
+    
+                var whatsappURL;
+    
+                if (randomNumber < 0.5) {
+                    whatsappURL = "https://api.whatsapp.com/send?phone=" + phoneNumber1 + "&text=" + encodeURIComponent("Halo BellbBox!" + "\nSaya Mau Order Nasi Boxnya Dong : " + "\n" + "\nNama Customer : _*Isi Nama Kamu*_ " + "\n" + "\nPilih Paket : _*Mingguan/Bulanan*_ " + "\n" + "\n" + "\nAlamat : " + "\n" + "\nTerima Kasih!!");
+        } else {
+          whatsappURL = "https://api.whatsapp.com/send?phone=" + phoneNumber1 + "&text=" + encodeURIComponent("Halo BellbBox!" + "\nSaya Mau Order Nasi Boxnya Dong : " + "\n" + "\nNama Customer : _*Isi Nama Kamu*_ " + "\n" + "\nPilih Paket : _*Mingguan/Bulanan*_ " + "\n" + "\n" + "\nAlamat : " + "\n" + "\nTerima Kasih");
+                }
+    
+                window.open(whatsappURL, "_blank");
+            }
+        </script>
+  </div>
+</div>
+    
+</body>
 
 
 
@@ -477,7 +532,7 @@
         <div class="col-lg-5 footer-list-29 footer-1">
           <h2> <a class="navbar-brand" href="index.html">
             <img src="assets/images/icon1.png" alt="Your logo" title="BellBox" style="height:65px;" />
-        </a> <a href="index.html" class=""> Bell Box</a></h2>
+        </a> <a href="index.html" class=""> BellBox</a></h2>
           <p>We make the delicious coffee for the coffee lovers. We are a team of dedicated coffee fans who celebrate
             exceptional coffee brands and roasters by providing our guests the unique opportunity to try coffee drinks
           </p>
@@ -514,7 +569,7 @@
   <div class="bottom-copies text-center">
     <div class="container">
       <p class="copy-footer-29">© 2024 Bell Box. All rights reserved | Designed by <a
-          href="https://AmnaCode.com">Abdimas_aja</a></p>
+          href="https://instagram.com/abdimas_aja?igshid=YmMyMTA2M2Y=">@Abdimas_aja</a></p>
     </div>
   </div>
 
