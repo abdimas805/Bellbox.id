@@ -137,19 +137,19 @@
                 <div class="float-top col-lg-4 col-md-6">
                     <a href="#url"><img src="" class="img-responsive" alt=""></a>
                     <div class="float-lt feature-gd">
-                        <h3><a href="#url">- Sedang sibuk dan butuh makan praktis, lezat, dan bergizi setiap hari?</a> </h3>
+                        <h3><a href="#url">Sedang sibuk dan butuh makan praktis, lezat, dan bergizi setiap hari?</a> </h3>
                     </div>
                 </div>
                 <div class="float-top col-lg-4 col-md-6 mt-md-0 mt-5">
                     <a href="#url"><img src="" class="img-responsive" alt=""></a>
                     <div class="float-lt feature-gd">
-                        <h3><a href="#url">- Sering Sakit magh karena telat makan ?</a> </h3>
+                        <h3><a href="#url">Sering Sakit magh karena telat makan ?</a> </h3>
                     </div>
                 </div>
                 <div class="float-top col-lg-4 col-md-6 mt-lg-0 mt-5">
                     <a href="#url"><img src="" class="img-responsive" alt=""></a>
                     <div class="float-lt feature-gd">
-                        <h3><a href="#url">- Mau Pesan Makan di Ojek Online Tapi Ongkir nya bikin kantong jebol ?</a> </h3>
+                        <h3><a href="#url">Mau Pesan Makan di Ojek Online Tapi Ongkir nya bikin kantong jebol ?</a> </h3>
                     </div>
                 </div>
                 <div class="container py-md-4 py-2">
@@ -210,16 +210,16 @@
     <div class="cusrtomer-layout py-5">
         <div class="container py-lg-5 py-md-4 py-2">
             <div class="heading align-self text-center">
-                <h6 class="title-small">Masih Ragu ? </h6>
-                <h3 class="title-big mb-md-5 mb-4">Ini Kata mereka tentang Catering Harian BellBox</h3 >
-            </div>
+                <div class="container py-md-4 py-2">
+                  <h3 class="title-big text-center mb-4">Masih Ragu ? </h3>
+                  <h5 class="title-small text-center mb-md-5 mb-4">Ini Kata mereka tentang Catering Harian BellBox</h5>
+          </div>
 
 
 
             <head>
               <meta charset="UTF-8">
               <meta name="viewport" content="width=device-width, initial-scale=1.0">
-              <title>WhatsApp Testimoni Slider (3 Gambar per Slide)</title>
               <style>
                   /* Style untuk kontainer slider */
                   .slider-container {
@@ -450,77 +450,97 @@
                             </div>
                         </div>
                     </div>
-            <div class="mt-5 text-more">
-                <h3 class="mt-4 pt-3 sample text-center">
-                    Promo Spesial untuk Pelanggan Baru!
-                    <a href=""> FREE 1 PORSI UNTUK SEMUA PAKET LANGGANAN <span class="pl-2 fa fa-long-arrow-down"></span><span class="pl-2 fa fa-long-arrow-down"></span><span class="pl-2 fa fa-long-arrow-down"></span></a>
-                </h3>
-
-            </div>
-        </div>
+               </div>
     </div>
 </section>
 
 
+<!-- //Teks Floating di Bawah Tengah-->
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        /* Style untuk tombol WhatsApp melayang */
-        .whatsapp-float {
-            position: fixed;
-            width: 60px;
-            height: 110px;
-            left: 46%; /* Menempatkan di tengah secara horizontal */
-            bottom: 50px; /* Jarak dari tepi bawah */
-            transform: translateX(-50%); /* Menyelaraskan tepat di tengah */
-            color: #fff;
-            border-radius: 50%;
-            text-align: center;
-            font-size: 60px;
-            z-index: 1000;
-        }
-        .whatsapp-float a {
-            color: white;
-            display: block;
-            width: 100%;
-            height: 100%;
-            line-height: 60px;
-            text-decoration: none;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+      /* Reset margin dan padding */
+      body, html {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+          font-family: Arial, sans-serif;
+      }
+
+      /* Style untuk teks floating */
+      .floating-text {
+          position: fixed;
+          bottom: 110px;
+          left: 50%;
+          transform: translateX(-50%);
+          color: rgb(94, 85, 85);
+          font-size: 18px;
+          padding: 10px 20px;
+          border-radius: 20px;
+          text-align: center;
+          max-width: 90%;
+          z-index: 1000;
+      }
+  </style>
 </head>
 <body>
 
-    <!-- Tombol WhatsApp melayang di tengah bawah -->
-
-    <div class="whatsapp-float">
-      <div class="heading align-self text-center">
-  <button onclick="sendWhatsAppMessages()" class="btn btn-style btn-primary mt-lg-17 mt-15">Order Sekarang</button>
-        <script>
-            function sendWhatsAppMessages() {
-                var formData = JSON.parse(localStorage.getItem("formData"));
-    
-                var phoneNumber1 = "6289514206590"; // Replace with your WhatsApp number 1
-                var phoneNumber2 = "6289514206590"; // Replace with your WhatsApp number 2
-    
-                var randomNumber = Math.random(); // Generate a random number between 0 and 1
-    
-                var whatsappURL;
-    
-                if (randomNumber < 0.5) {
-                    whatsappURL = "https://api.whatsapp.com/send?phone=" + phoneNumber1 + "&text=" + encodeURIComponent("Halo BellbBox!" + "\nSaya Mau Order Nasi Boxnya Dong : " + "\n" + "\nNama Customer : _*Isi Nama Kamu*_ " + "\n" + "\nPilih Paket : _*Mingguan/Bulanan*_ " + "\n" + "\n" + "\nAlamat : " + "\n" + "\nTerima Kasih!!");
-        } else {
-          whatsappURL = "https://api.whatsapp.com/send?phone=" + phoneNumber1 + "&text=" + encodeURIComponent("Halo BellbBox!" + "\nSaya Mau Order Nasi Boxnya Dong : " + "\n" + "\nNama Customer : _*Isi Nama Kamu*_ " + "\n" + "\nPilih Paket : _*Mingguan/Bulanan*_ " + "\n" + "\n" + "\nAlamat : " + "\n" + "\nTerima Kasih");
-                }
-    
-                window.open(whatsappURL, "_blank");
-            }
-        </script>
+  <!-- Teks Floating -->
+  <div class="floating-text">
+         Promo Spesial untuk Pelanggan Baru! <a href=""> FREE 1 PORSI UNTUK SEMUA PAKET LANGGANAN <span class="pl-2 fa fa-long-arrow-down"></span><span class="pl-2 fa fa-long-arrow-down"></span><span class="pl-2 fa fa-long-arrow-down"></span></a>
   </div>
-</div>
-    
+
 </body>
+
+
+
+<!-- //Tombol Floating di Bawah Tengah-->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+      /* Reset margin dan padding */
+      body, html {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+          font-family: Arial, sans-serif;
+      }
+
+      /* Style untuk tombol floating */
+      .floating-button {
+          position: fixed;
+          bottom: 60px;
+          left: 50%;
+          transform: translateX(-50%);
+          background-color: #f0a211;
+          color: white;
+          font-size: 18px;
+          font-weight: bold;
+          padding: 12px 30px;
+          border-radius: 30px;
+          text-align: center;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+          transition: background-color 0.3s ease;
+          text-decoration: none;
+      }
+
+      /* Hover efek */
+      .floating-button:hover {
+          background-color: #f0a211;
+      }
+  </style>
+</head>
+<body>
+
+  <!-- Tombol Floating -->
+  <a href="https://wa.me/6289514206590" class="floating-button" target="_blank">
+      Tertarik? Klik Disini
+  </a>
+</body>
+
 
 
 
